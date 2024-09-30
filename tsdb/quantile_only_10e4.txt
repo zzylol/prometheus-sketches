@@ -1,0 +1,450 @@
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1 0.092500889 467022.5385617645
+--- PASS: TestDBInsertionThroughputZipf (0.53s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1 0.107845693 400572.32512753195
+--- PASS: TestDBInsertionThroughputZipf (0.17s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1 0.094508365 457102.39511603024
+--- PASS: TestDBInsertionThroughputZipf (0.19s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1 0.102936866 419674.7159564776
+--- PASS: TestDBInsertionThroughputZipf (0.20s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1 0.09396446 459748.29206702195
+--- PASS: TestDBInsertionThroughputZipf (0.19s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 18 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 104 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 105 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002455f0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 106 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc00029dc20)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 107 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 108 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0005963f0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 109 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 110 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 111 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0005be7b0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 112 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0005d0a50)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	1.772s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10 0.679935162 635354.6987175815
+--- PASS: TestDBInsertionThroughputZipf (0.95s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10 0.685779115 629940.4437243616
+--- PASS: TestDBInsertionThroughputZipf (0.81s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10 0.687697679 628183.0129602633
+--- PASS: TestDBInsertionThroughputZipf (0.79s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10 0.681462788 633930.43260346
+--- PASS: TestDBInsertionThroughputZipf (0.77s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10 0.693760684 622693.1130043685
+--- PASS: TestDBInsertionThroughputZipf (0.79s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 115 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 116 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc00021e090)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 117 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc000229bf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 118 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 119 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002583c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 120 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 121 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 122 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc00027a780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 123 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0002a2ab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	4.601s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100 6.05180088 713837.1016595642
+--- PASS: TestDBInsertionThroughputZipf (6.25s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100 6.080397583 710479.8561327894
+--- PASS: TestDBInsertionThroughputZipf (6.13s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100 6.09347689 708954.8508979412
+--- PASS: TestDBInsertionThroughputZipf (6.15s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100 6.096888604 708558.1319569735
+--- PASS: TestDBInsertionThroughputZipf (6.14s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100 6.105008434 707615.7300522412
+--- PASS: TestDBInsertionThroughputZipf (6.17s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 100 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 101 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc00078e090)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 102 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001d7bf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 103 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 104 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc00021c3c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 105 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 106 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 107 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc00025c780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 108 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc00027cab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	31.319s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1000 10.609645691 4.0717665092855925e+06
+--- PASS: TestDBInsertionThroughputZipf (10.86s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1000 10.824113961 3.9910888000304196e+06
+--- PASS: TestDBInsertionThroughputZipf (10.85s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1000 10.80381819 3.998586355329995e+06
+--- PASS: TestDBInsertionThroughputZipf (10.85s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1000 10.531932456 4.101811341886183e+06
+--- PASS: TestDBInsertionThroughputZipf (10.61s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 1000 10.92520349 3.9541597590874713e+06
+--- PASS: TestDBInsertionThroughputZipf (10.95s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 92 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 130 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0006c70e0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 116 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001cbbf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 117 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 118 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001fa3c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 119 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 120 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 121 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000286780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 122 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0002aeab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	54.618s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10000 50.423520029 8.56743043229716e+06
+--- PASS: TestDBInsertionThroughputZipf (50.81s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10000 49.889523956 8.659132534136863e+06
+--- PASS: TestDBInsertionThroughputZipf (50.37s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10000 50.902815502 8.486760422574788e+06
+--- PASS: TestDBInsertionThroughputZipf (51.05s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10000 50.130408537 8.617524025984181e+06
+--- PASS: TestDBInsertionThroughputZipf (50.56s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 10000 50.203683605 8.604946270456044e+06
+--- PASS: TestDBInsertionThroughputZipf (50.78s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 62 in state chan receive, 1 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 63 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc000250030)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 89 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0008165d0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 90 in state chan receive, 4 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 91 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002323c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 92 in state chan receive, 4 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 93 in state chan receive, 4 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 94 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000292780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 95 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0002b2ab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	254.326s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100000 521.849708133 8.278245503778251e+06
+--- PASS: TestDBInsertionThroughputZipf (523.36s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100000 536.436347602 8.053145576938333e+06
+--- PASS: TestDBInsertionThroughputZipf (537.92s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100000 539.17761847 8.012202012870396e+06
+--- PASS: TestDBInsertionThroughputZipf (540.65s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100000 534.686476213 8.079501151024187e+06
+--- PASS: TestDBInsertionThroughputZipf (536.24s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7398: 100000 537.959724407 8.030340941902282e+06
+--- PASS: TestDBInsertionThroughputZipf (539.70s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 18 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 14 in state chan receive, 1 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 114 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002852c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 15 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0005224e0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 16 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 130 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002303c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 131 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 132 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/logger/throttler.go:42 +0xa5
+ Goroutine 133 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000258780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 134 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000278ab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.1.0/lib/lrucache/lrucache.go:53 +0x21f
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	2681.484s
+FAIL

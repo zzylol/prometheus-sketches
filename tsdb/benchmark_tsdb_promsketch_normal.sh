@@ -1,0 +1,9 @@
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=1000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=10000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=25000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=50000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=75000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=100000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=150000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=200000
+go test -v  -count=1  -timeout 0 -run TestDBInsertionThroughputNormal ./ -numts=500000

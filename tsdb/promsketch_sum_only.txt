@@ -1,0 +1,67 @@
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 1000 12.228879406 3.532621311058499e+06
+--- PASS: TestDBInsertionThroughputNormal (17.75s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	17.798s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 10000 43.899456042 9.840668631217023e+06
+--- PASS: TestDBInsertionThroughputNormal (113.13s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	113.385s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 25000 290.413180706 3.7188394733823696e+06
+--- PASS: TestDBInsertionThroughputNormal (345.22s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	345.545s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 50000 410.328485859 5.264075184734395e+06
+--- PASS: TestDBInsertionThroughputNormal (451.71s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	452.476s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 75000 531.230550844 6.0990468165891515e+06
+--- PASS: TestDBInsertionThroughputNormal (614.34s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	615.177s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 100000 796.937752286 5.420749597579191e+06
+--- PASS: TestDBInsertionThroughputNormal (886.83s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	887.897s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 150000 1313.1579047 4.9346693012371585e+06
+--- PASS: TestDBInsertionThroughputNormal (1611.16s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	1612.010s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 200000 1477.359487827 5.84827191431132e+06
+--- PASS: TestDBInsertionThroughputNormal (1816.57s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	1817.395s
+=== RUN   TestDBInsertionThroughputNormal
+ err write to WAL: log samples: write /mydata/TestDBInsertionThroughputNormal239590467/001/wal/00001591: no space left on device
+panic: write /mydata/TestDBInsertionThroughputNormal239590467/001/chunks_head/000353: no space left on device
+
+goroutine 258 [running]:
+github.com/zzylol/prometheus-sketches/tsdb.handleChunkWriteError({0x1450d00, 0xcf780ea7e0})
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/head_append.go:1493 +0x5c
+github.com/zzylol/prometheus-sketches/tsdb/chunks.(*ChunkDiskMapper).WriteChunk(0xc0001be0f0, 0x79608, 0x1b50f8, 0x1b7e48, {0x145a3a0, 0xc63fceb4c0}, 0x0, 0xf30250)
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/chunks/head_chunks.go:442 +0x151
+github.com/zzylol/prometheus-sketches/tsdb.(*memSeries).mmapChunks(0xc22f30bc80, 0xc0001be0f0)
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/head_append.go:1475 +0xc5
+github.com/zzylol/prometheus-sketches/tsdb.(*Head).mmapHeadChunks(0xc0001de008)
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/head.go:1731 +0x20b
+github.com/zzylol/prometheus-sketches/tsdb.(*DB).run(0xc0001bc000, {0x14579f8, 0xc000130870})
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/db.go:1007 +0x372
+created by github.com/zzylol/prometheus-sketches/tsdb.open in goroutine 126
+	/mydata/prometheus-sketch-VLDB/prometheus-sketches/tsdb/db.go:941 +0x14c5
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	3533.526s
+FAIL

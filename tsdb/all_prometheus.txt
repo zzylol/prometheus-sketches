@@ -1,0 +1,628 @@
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1 0.446038196 96852.6919609369
+--- PASS: TestDBInsertionThroughputZipf (1.34s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1 0.427274016 101106.07802558254
+--- PASS: TestDBInsertionThroughputZipf (0.59s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1 0.439068438 98390.12842002549
+--- PASS: TestDBInsertionThroughputZipf (0.60s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1 0.431778827 100051.22367892301
+--- PASS: TestDBInsertionThroughputZipf (0.64s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1 0.395824129 109139.37992900882
+--- PASS: TestDBInsertionThroughputZipf (0.61s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 100 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 101 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001f55f0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 102 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002a5c20)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 103 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 104 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0005be3f0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 105 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 106 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 146 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000786780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 162 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000a8c210)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 323 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0009807d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 167
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 322 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0009807d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 167
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 131841 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000980f00})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 132893
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 44668 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00078e8c0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 42199
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 44669 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00078e8c0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 42199
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 133090 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000980f00})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 132893
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 88920 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000980d70})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 88685
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 88919 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000980d70})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 88685
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 177281 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0005e0aa0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 177032
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 177282 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0005e0aa0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 177032
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	4.282s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10 2.14309469 201577.65404196864
+--- PASS: TestDBInsertionThroughputZipf (2.63s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10 2.100931692 205623.0584007012
+--- PASS: TestDBInsertionThroughputZipf (2.38s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10 2.118205459 203946.22163042967
+--- PASS: TestDBInsertionThroughputZipf (2.40s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10 2.155496312 200417.87944381323
+--- PASS: TestDBInsertionThroughputZipf (2.43s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10 2.17881709 198272.72421477106
+--- PASS: TestDBInsertionThroughputZipf (2.56s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 95 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 96 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc000812c00)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 97 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001c7bf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 98 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 99 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001f63c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 100 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 101 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 102 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000296780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 103 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0005bcab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 1732571 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0020fb360})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1701397
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 306 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00029dd10})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 130
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 307 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00029dd10})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 130
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1299535 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0005bf4a0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1299378
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1299536 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0005bf4a0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1299378
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 433518 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00029cc80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 430830
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 433519 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00029cc80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 430830
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 866536 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000888eb0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 767173
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 866537 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc000888eb0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 767173
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1732572 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0020fb360})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1701397
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	12.896s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 100 23.197558226 186226.49668179778
+--- PASS: TestDBInsertionThroughputZipf (24.64s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 100 23.182695548 186345.888512205
+--- PASS: TestDBInsertionThroughputZipf (24.12s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 100 23.243553564 185857.98372460945
+--- PASS: TestDBInsertionThroughputZipf (23.84s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 100 23.508777104 183761.15358484365
+--- PASS: TestDBInsertionThroughputZipf (24.25s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 100 23.464057199 184111.38207522404
+--- PASS: TestDBInsertionThroughputZipf (23.96s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 76 in state chan receive, 2 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 98 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc000288f90)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 77 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001d7bf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 78 in state chan receive, 2 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 79 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001b23c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 80 in state chan receive, 2 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 81 in state chan receive, 2 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 114 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc00055e780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 115 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc0005ccab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 12964364 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00b94c690})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 12964140
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 17285674 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00a7934a0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 15781064
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 17285675 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00a7934a0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 15781064
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 512 in state chan receive, 2 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003692690})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 136
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 513 in state chan receive, 2 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003692690})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 136
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 3107119 in state chan receive, 1 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003802410})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 4321723
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 3107120 in state chan receive, 1 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003802410})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 4321723
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 12964363 in state chan receive, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00b94c690})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 12964140
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 8643316 in state chan receive, 1 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003381cc0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 5304392
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 8643317 in state chan receive, 1 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc003381cc0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 5304392
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	121.316s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1000 253.703851067 170277.2733575551
+--- PASS: TestDBInsertionThroughputZipf (255.40s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1000 272.833442849 158338.36038901247
+--- PASS: TestDBInsertionThroughputZipf (274.03s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1000 282.38731586 152981.37548577922
+--- PASS: TestDBInsertionThroughputZipf (283.66s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1000 279.430326571 154600.2559211245
+--- PASS: TestDBInsertionThroughputZipf (280.76s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 1000 278.002770041 155394.13507868585
+--- PASS: TestDBInsertionThroughputZipf (279.10s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 5 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 114 in state chan receive, 1 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 130 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0005c1d40)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 107 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0001dfbf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 108 in state chan receive, 22 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 109 in state select, 1 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002463c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 110 in state chan receive, 22 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 111 in state chan receive, 22 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 112 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000268780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 113 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000544ab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 2477 in state chan receive, 22 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc01c95b0e0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 226
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 2478 in state chan receive, 22 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc01c95b0e0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 226
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 129611706 in state chan receive, 9 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc01ad72460})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 121009578
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 129611705 in state chan receive, 9 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc01ad72460})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 121009578
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 43205609 in state chan receive, 18 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0011ee9b0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 41114321
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 43205610 in state chan receive, 18 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0011ee9b0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 41114321
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 86408699 in state chan receive, 14 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0002bdd60})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 75307227
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 86408700 in state chan receive, 14 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0002bdd60})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 75307227
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 172814663 in state chan receive, 4 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0035ffcc0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 152398778
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 172814664 in state chan receive, 4 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc0035ffcc0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 152398778
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	1373.555s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10000 532.077849411 811911.265387604
+--- PASS: TestDBInsertionThroughputZipf (539.37s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10000 535.202214368 807171.5482532755
+--- PASS: TestDBInsertionThroughputZipf (540.31s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10000 531.304964159 813092.3464715048
+--- PASS: TestDBInsertionThroughputZipf (538.53s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10000 531.926038626 812142.9834792153
+--- PASS: TestDBInsertionThroughputZipf (538.99s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7400: 10000 534.535804887 808177.8545991397
+--- PASS: TestDBInsertionThroughputZipf (539.81s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 18 in state chan receive, with github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:12 +0x8d
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/fasttime.init.0 in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/fasttime/fasttime.go:9 +0x1a
+ Goroutine 103 in state chan receive, 2 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:46 +0x79
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/bytesutil.newInternStringMap in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/bytesutil/internstring.go:43 +0xda
+ Goroutine 60 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0005a6390)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 104 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc000123bf0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 105 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 106 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.(*Cache).cleaner(0xc0002ac3c0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:150 +0x136
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/blockcache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/blockcache/blockcache.go:57 +0x25b
+ Goroutine 107 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 108 in state chan receive, 44 minutes, with github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1 on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler.func1()
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:44 +0x2a
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/logger.newLogThrottler in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/logger/throttler.go:42 +0xa5
+ Goroutine 109 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000526780)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 110 in state select, with github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner on top of the stack:
+github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.(*Cache).cleaner(0xc000568ab0)
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:135 +0xce
+created by github.com/zzylol/VictoriaMetrics-sketches/lib/lrucache.NewCache in goroutine 1
+	/users/zz_y/go/pkg/mod/github.com/zzylol/!victoria!metrics-sketches@v0.0.0-20240908203625-99d44df03fb7/lib/lrucache/lrucache.go:53 +0x21f
+ Goroutine 432049541 in state chan receive, 35 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc15f328c80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 432028981
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 432049540 in state chan receive, 35 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc15f328c80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 432028981
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 864078263 in state chan receive, 26 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc08dcb5ae0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 864058093
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 864078264 in state chan receive, 26 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc08dcb5ae0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 864058093
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 20443 in state chan receive, 44 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc1171a2960})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 123
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 20444 in state chan receive, 44 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc1171a2960})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 123
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1728135768 in state chan receive, 8 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00021b860})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1728106407
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1296106981 in state chan receive, 17 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc05370a230})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1296086879
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1296106980 in state chan receive, 17 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc05370a230})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1296086879
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+ Goroutine 1728135769 in state chan receive, 8 minutes, with github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean.func1({0x15971b8, 0xc00021b860})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:108 +0x69
+created by github.com/froot-netsys/promsketch.(*ExpoHistogramUnivOptimized).StartBackgroundClean in goroutine 1728106407
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.96/exponential_univmon_optimized.go:101 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	2698.710s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+signal: interrupt
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	1042.048s

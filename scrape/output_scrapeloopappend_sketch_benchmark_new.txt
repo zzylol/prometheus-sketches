@@ -1,0 +1,4 @@
+=== RUN   TestAppendThroughput
+    scrape_test.go:1121: 100
+signal: interrupt
+FAIL	github.com/zzylol/prometheus-sketches/scrape	57519.952s

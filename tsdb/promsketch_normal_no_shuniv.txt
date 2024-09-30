@@ -1,0 +1,3 @@
+=== RUN   TestDBInsertionThroughputNormal
+signal: interrupt
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	3.765s

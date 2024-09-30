@@ -1,0 +1,5 @@
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7397: 1 23.547626482 183457.9805018669
+--- PASS: TestDBInsertionThroughputZipf (24.47s)
+=== RUN   TestDBInsertionThroughputZipf

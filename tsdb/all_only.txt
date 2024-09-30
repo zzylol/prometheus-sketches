@@ -1,0 +1,308 @@
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1 96.432256656 447.98287936064906
+--- PASS: TestDBInsertionThroughputZipf (97.43s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1 95.322683277 453.19748159485084
+--- PASS: TestDBInsertionThroughputZipf (95.35s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1 93.513335545 461.9661971014981
+--- PASS: TestDBInsertionThroughputZipf (93.55s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1 95.9317564 450.3201194385721
+--- PASS: TestDBInsertionThroughputZipf (96.00s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1 96.16697649 449.2186567235187
+--- PASS: TestDBInsertionThroughputZipf (96.22s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 251 in state chan receive, 6 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc000203900})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 96
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 252 in state chan receive, 6 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc000203900})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 96
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 348022 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc01c7d3860})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 348001
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 174085 in state chan receive, 4 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00feff720})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 174115
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 87098 in state chan receive, 5 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00830b1d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 87056
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 87099 in state chan receive, 5 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00830b1d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 87056
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 348023 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc01c7d3860})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 348001
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 174086 in state chan receive, 4 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00feff720})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 174115
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 261035 in state chan receive, 3 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc01898e870})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 261054
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 261034 in state chan receive, 3 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc01898e870})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 261054
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	479.064s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 10 527.835834621 818.4362858012233
+--- PASS: TestDBInsertionThroughputZipf (528.13s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 10 525.691524683 821.774709532368
+--- PASS: TestDBInsertionThroughputZipf (525.82s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 10 533.388662728 809.9159771985952
+--- PASS: TestDBInsertionThroughputZipf (533.52s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 10 532.434146046 811.3679470187043
+--- PASS: TestDBInsertionThroughputZipf (532.54s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 10 531.990666212 812.0443222735917
+--- PASS: TestDBInsertionThroughputZipf (532.14s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 1427752 in state chan receive, 10 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc018082fa0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 1427609
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 287 in state chan receive, 36 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc009efec80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 104
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 288 in state chan receive, 36 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc009efec80})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 104
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 951958 in state chan receive, 17 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc02245cb40})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 951798
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 1903534 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc020663450})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 1903389
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 1427751 in state chan receive, 10 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc018082fa0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 1427609
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 476139 in state chan receive, 27 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc0381d96d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 475986
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 476140 in state chan receive, 27 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc0381d96d0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 475986
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 951957 in state chan receive, 17 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc02245cb40})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 951798
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 1903533 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc020663450})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 1903389
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	2652.726s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 100 857.121762613 5040.124038888192
+--- PASS: TestDBInsertionThroughputZipf (858.32s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 100 859.385151076 5026.849712950136
+--- PASS: TestDBInsertionThroughputZipf (860.30s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 100 860.440184508 5020.686013717708
+--- PASS: TestDBInsertionThroughputZipf (861.40s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 100 857.425940767 5038.336017843822
+--- PASS: TestDBInsertionThroughputZipf (858.44s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 100 859.493398379 5026.216615680233
+--- PASS: TestDBInsertionThroughputZipf (860.59s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 14259116 in state chan receive, 16 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc1a71f4cd0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 14258640
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 447 in state chan receive, 58 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc05fd7a640})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 120
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 448 in state chan receive, 58 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc05fd7a640})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 120
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 14259117 in state chan receive, 16 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc1a71f4cd0})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 14258640
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 19011881 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc136bd4f00})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 19011482
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 4753598 in state chan receive, 44 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc21c14e000})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 4752608
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 4753599 in state chan receive, 44 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc21c14e000})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 4752608
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 19011880 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc136bd4f00})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 19011482
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 9506397 in state chan receive, 30 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc0b9748d70})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 9506067
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 9506396 in state chan receive, 30 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc0b9748d70})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 9506067
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	4300.104s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1000 3218.597263451 13421.996125629179
+--- PASS: TestDBInsertionThroughputZipf (3228.41s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1000 3695.180784427 11690.902968012399
+--- PASS: TestDBInsertionThroughputZipf (3704.13s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1000 3584.983734445 12050.263878446269
+--- PASS: TestDBInsertionThroughputZipf (3595.45s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1000 3911.280229979 11044.976953807256
+--- PASS: TestDBInsertionThroughputZipf (3921.70s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7403: 1000 3543.224526191 12192.284084926565
+--- PASS: TestDBInsertionThroughputZipf (3552.80s)
+PASS
+goleak: Errors on successful test run: found unexpected goroutines:
+[Goroutine 47525217 in state chan receive, 185 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00a07c460})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 47523106
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 47525216 in state chan receive, 185 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc00a07c460})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 47523106
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 142570340 in state chan receive, 61 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc47122f180})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 142568168
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 142570341 in state chan receive, 61 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc47122f180})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 142568168
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 190092986 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xcaa2689220})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 190090715
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 95047896 in state chan receive, 126 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc6dc30d950})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 95045746
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 95047895 in state chan receive, 126 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc6dc30d950})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 95045746
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 2296 in state chan receive, 248 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc3b887ee60})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 110
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 2297 in state chan receive, 248 minutes, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xc3b887ee60})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 110
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+ Goroutine 190092985 in state chan receive, with github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1 on top of the stack:
+github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean.func1({0x145f398, 0xcaa2689220})
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:136 +0x69
+created by github.com/froot-netsys/promsketch.(*SmoothHistogramUnivMon).StartBackgroundClean in goroutine 190090715
+	/users/zz_y/go/pkg/mod/github.com/froot-netsys/promsketch@v0.2.56/SmoothHistogram.go:129 +0xb6
+]
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	18008.052s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+signal: killed
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	1208.368s
+FAIL
+=== RUN   TestDBInsertionThroughputZipf
+signal: killed
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	305.274s
+FAIL

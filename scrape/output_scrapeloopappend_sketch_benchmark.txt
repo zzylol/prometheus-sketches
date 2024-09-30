@@ -1,0 +1,238 @@
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 22.40459791500013
+--- PASS: TestScrapeLoopAppendTime (1.13s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 10.611257106999936
+--- PASS: TestScrapeLoopAppendTime (1.23s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 24.141036995999972
+--- PASS: TestScrapeLoopAppendTime (1.16s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 7.518259648999999
+--- PASS: TestScrapeLoopAppendTime (1.04s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 12.85371256000007
+--- PASS: TestScrapeLoopAppendTime (1.30s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 12.881161743999996
+--- PASS: TestScrapeLoopAppendTime (1.49s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 10.15881203900008
+--- PASS: TestScrapeLoopAppendTime (1.21s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 28.009838087000148
+--- PASS: TestScrapeLoopAppendTime (1.38s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 16.61198463600007
+--- PASS: TestScrapeLoopAppendTime (1.35s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100
+    scrape_test.go:1141: 100 27.299942449000163
+--- PASS: TestScrapeLoopAppendTime (1.46s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	12.941s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 182.23120957399823
+--- PASS: TestScrapeLoopAppendTime (12.00s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 193.79399596400293
+--- PASS: TestScrapeLoopAppendTime (12.30s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 149.66379682600012
+--- PASS: TestScrapeLoopAppendTime (12.62s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 164.69152664000237
+--- PASS: TestScrapeLoopAppendTime (12.42s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 132.5553065739975
+--- PASS: TestScrapeLoopAppendTime (12.63s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 130.6915301519997
+--- PASS: TestScrapeLoopAppendTime (12.69s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 149.7755468160018
+--- PASS: TestScrapeLoopAppendTime (12.29s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 161.92882797299623
+--- PASS: TestScrapeLoopAppendTime (12.61s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 159.52350524699648
+--- PASS: TestScrapeLoopAppendTime (12.86s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 1000
+    scrape_test.go:1141: 1000 183.8515626749935
+--- PASS: TestScrapeLoopAppendTime (12.37s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	124.925s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 10000
+    scrape_test.go:1141: 10000 1683.126112515955
+--- PASS: TestScrapeLoopAppendTime (129.52s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 10000
+    scrape_test.go:1141: 10000 1483.9916643879108
+--- PASS: TestScrapeLoopAppendTime (133.55s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 10000
+    scrape_test.go:1141: 10000 1584.9695670519468
+--- PASS: TestScrapeLoopAppendTime (133.30s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 10000
+    scrape_test.go:1141: 10000 1553.8984950489325
+--- PASS: TestScrapeLoopAppendTime (134.24s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 10000
+    scrape_test.go:1141: 10000 1615.948343227069
+--- PASS: TestScrapeLoopAppendTime (134.86s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	665.609s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 50000
+    scrape_test.go:1141: 50000 7783.179259506196
+--- PASS: TestScrapeLoopAppendTime (653.85s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 50000
+    scrape_test.go:1141: 50000 8362.073630279738
+--- PASS: TestScrapeLoopAppendTime (672.45s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 50000
+    scrape_test.go:1141: 50000 8054.3432667389725
+--- PASS: TestScrapeLoopAppendTime (692.87s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 50000
+    scrape_test.go:1141: 50000 8251.205964708948
+--- PASS: TestScrapeLoopAppendTime (690.19s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 50000
+    scrape_test.go:1141: 50000 8653.23141474002
+--- PASS: TestScrapeLoopAppendTime (687.84s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	3397.297s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 75000
+    scrape_test.go:1141: 75000 11960.317414490413
+--- PASS: TestScrapeLoopAppendTime (977.49s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 75000
+    scrape_test.go:1141: 75000 12140.109882477902
+--- PASS: TestScrapeLoopAppendTime (1011.66s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 75000
+    scrape_test.go:1141: 75000 12405.917289595174
+--- PASS: TestScrapeLoopAppendTime (1012.57s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 75000
+    scrape_test.go:1141: 75000 12430.140633246789
+--- PASS: TestScrapeLoopAppendTime (1021.55s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 75000
+    scrape_test.go:1141: 75000 12947.398829294896
+--- PASS: TestScrapeLoopAppendTime (1028.26s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	5051.690s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100000
+    scrape_test.go:1141: 100000 17262.92574913471
+--- PASS: TestScrapeLoopAppendTime (1453.66s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100000
+    scrape_test.go:1141: 100000 16860.39131812507
+--- PASS: TestScrapeLoopAppendTime (1462.32s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100000
+    scrape_test.go:1141: 100000 17028.13793595275
+--- PASS: TestScrapeLoopAppendTime (1453.74s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100000
+    scrape_test.go:1141: 100000 17565.195424430865
+--- PASS: TestScrapeLoopAppendTime (1460.94s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 100000
+    scrape_test.go:1141: 100000 17513.629270238795
+--- PASS: TestScrapeLoopAppendTime (1458.45s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	7289.232s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 150000
+    scrape_test.go:1141: 150000 25968.183414511008
+--- PASS: TestScrapeLoopAppendTime (2306.61s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 150000
+    scrape_test.go:1141: 150000 25441.28151191657
+--- PASS: TestScrapeLoopAppendTime (2447.30s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 150000
+    scrape_test.go:1141: 150000 26096.59362842306
+--- PASS: TestScrapeLoopAppendTime (2438.59s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 150000
+    scrape_test.go:1141: 150000 26029.666111492246
+--- PASS: TestScrapeLoopAppendTime (2453.03s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 150000
+    scrape_test.go:1141: 150000 25693.42423069197
+--- PASS: TestScrapeLoopAppendTime (2431.26s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	12076.950s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 200000
+    scrape_test.go:1141: 200000 36703.838489089576
+--- PASS: TestScrapeLoopAppendTime (3406.13s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 200000
+    scrape_test.go:1141: 200000 34603.940293291875
+--- PASS: TestScrapeLoopAppendTime (3477.89s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 200000
+    scrape_test.go:1141: 200000 35372.25288655195
+--- PASS: TestScrapeLoopAppendTime (3464.58s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 200000
+    scrape_test.go:1141: 200000 34968.304339007984
+--- PASS: TestScrapeLoopAppendTime (3517.53s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 200000
+    scrape_test.go:1141: 200000 34574.16210182197
+--- PASS: TestScrapeLoopAppendTime (3525.03s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	17391.268s
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 500000
+    scrape_test.go:1141: 500000 93910.10927681584
+--- PASS: TestScrapeLoopAppendTime (9214.91s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 500000
+    scrape_test.go:1141: 500000 89597.1222732531
+--- PASS: TestScrapeLoopAppendTime (9458.51s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 500000
+    scrape_test.go:1141: 500000 91188.88086258485
+--- PASS: TestScrapeLoopAppendTime (9402.59s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 500000
+    scrape_test.go:1141: 500000 89023.63163630728
+--- PASS: TestScrapeLoopAppendTime (9401.99s)
+=== RUN   TestScrapeLoopAppendTime
+    scrape_test.go:1122: 500000
+    scrape_test.go:1141: 500000 88934.7989768394
+--- PASS: TestScrapeLoopAppendTime (9476.51s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/scrape	46954.635s

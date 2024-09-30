@@ -1,0 +1,180 @@
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 1000 23.884994574 1.8086669379873062e+06
+--- PASS: TestDBInsertionThroughputZipf (27.64s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 1000 23.727823813 1.820647369116572e+06
+--- PASS: TestDBInsertionThroughputZipf (27.58s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 1000 23.738082783 1.8198605335953091e+06
+--- PASS: TestDBInsertionThroughputZipf (27.25s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 1000 23.447753098 1.8423940161535046e+06
+--- PASS: TestDBInsertionThroughputZipf (27.04s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 1000 23.916534982 1.8062817223528854e+06
+--- PASS: TestDBInsertionThroughputZipf (27.95s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	137.599s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 10000 170.73885643 2.530179767117701e+06
+--- PASS: TestDBInsertionThroughputZipf (177.42s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 10000 170.709756407 2.530611073980103e+06
+--- PASS: TestDBInsertionThroughputZipf (178.32s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 10000 172.870890553 2.498974804942966e+06
+--- PASS: TestDBInsertionThroughputZipf (180.97s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 10000 170.172802395 2.5385960266274195e+06
+--- PASS: TestDBInsertionThroughputZipf (178.10s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 10000 169.987195962 2.5413678810054143e+06
+--- PASS: TestDBInsertionThroughputZipf (176.97s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	892.657s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 25000 414.442851945 2.6059081365054525e+06
+--- PASS: TestDBInsertionThroughputZipf (422.42s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 25000 407.639999441 2.6493965299799154e+06
+--- PASS: TestDBInsertionThroughputZipf (415.62s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 25000 411.612484025 2.6238271236068835e+06
+--- PASS: TestDBInsertionThroughputZipf (420.21s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 25000 409.580572939 2.636843813783247e+06
+--- PASS: TestDBInsertionThroughputZipf (417.90s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 25000 412.967180224 2.615219929618113e+06
+--- PASS: TestDBInsertionThroughputZipf (422.05s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	2100.265s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 50000 788.845867692 2.7381774925432694e+06
+--- PASS: TestDBInsertionThroughputZipf (796.72s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 50000 783.866120001 2.755572597010883e+06
+--- PASS: TestDBInsertionThroughputZipf (792.15s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 50000 792.752896417 2.7246825710288007e+06
+--- PASS: TestDBInsertionThroughputZipf (802.35s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 50000 794.840100297 2.7175277130493214e+06
+--- PASS: TestDBInsertionThroughputZipf (806.87s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 50000 796.353727598 2.712362515731665e+06
+--- PASS: TestDBInsertionThroughputZipf (805.97s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	4008.006s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 75000 1166.110986174 2.7784662338448693e+06
+--- PASS: TestDBInsertionThroughputZipf (1178.10s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 75000 1163.166578946 2.7854995652780156e+06
+--- PASS: TestDBInsertionThroughputZipf (1176.86s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 75000 1171.269644988 2.7662289498104383e+06
+--- PASS: TestDBInsertionThroughputZipf (1186.26s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 75000 1170.856001363 2.7672062117188605e+06
+--- PASS: TestDBInsertionThroughputZipf (1186.01s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 75000 1195.944848593 2.709155028186945e+06
+--- PASS: TestDBInsertionThroughputZipf (1210.21s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	5943.563s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 100000 1631.297907282 2.6481980885991585e+06
+--- PASS: TestDBInsertionThroughputZipf (1648.60s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 100000 1616.546134784 2.6723641887135073e+06
+--- PASS: TestDBInsertionThroughputZipf (1632.32s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 100000 1653.50545631 2.6126312335494854e+06
+--- PASS: TestDBInsertionThroughputZipf (1672.46s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 100000 1685.676016205 2.562770045056293e+06
+--- PASS: TestDBInsertionThroughputZipf (1703.53s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 100000 1721.99026605 2.5087249824643107e+06
+--- PASS: TestDBInsertionThroughputZipf (1740.94s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	8406.040s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 150000 2751.498790441 2.3550800830849754e+06
+--- PASS: TestDBInsertionThroughputZipf (2775.40s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 150000 2596.18075957 2.4959741251118695e+06
+--- PASS: TestDBInsertionThroughputZipf (2638.42s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 150000 2631.83934534 2.4621563666010424e+06
+--- PASS: TestDBInsertionThroughputZipf (2656.55s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 150000 2667.9531338 2.428828272095789e+06
+--- PASS: TestDBInsertionThroughputZipf (2693.29s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 150000 2737.381807529 2.3672254934175275e+06
+--- PASS: TestDBInsertionThroughputZipf (2758.17s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	13533.047s
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 200000 3786.307349768 2.2819066710285423e+06
+--- PASS: TestDBInsertionThroughputZipf (3815.30s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 200000 3875.768889546 2.2292350875988565e+06
+--- PASS: TestDBInsertionThroughputZipf (3918.37s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 200000 3997.047560805 2.1615954948156574e+06
+--- PASS: TestDBInsertionThroughputZipf (4032.41s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 200000 3779.883187485 2.2857849228268745e+06
+--- PASS: TestDBInsertionThroughputZipf (3802.44s)
+=== RUN   TestDBInsertionThroughputZipf
+ingestion completed
+    db_test.go:7394: 200000 3656.649747938 2.3628185895770118e+06
+--- PASS: TestDBInsertionThroughputZipf (3682.89s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	19267.411s
+=== RUN   TestDBInsertionThroughputZipf
+signal: killed
+FAIL	github.com/zzylol/prometheus-sketches/tsdb	3507.247s
+FAIL

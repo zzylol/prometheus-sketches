@@ -1,0 +1,54 @@
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 1000 14.203579136 3.041486908782482e+06
+--- PASS: TestDBInsertionThroughputNormal (19.80s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	19.862s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 10000 129.29839847 3.341108668876771e+06
+--- PASS: TestDBInsertionThroughputNormal (144.51s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	144.708s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 25000 340.10783239 3.175463477011518e+06
+--- PASS: TestDBInsertionThroughputNormal (357.82s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	358.120s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 50000 698.51437528 3.0922770904094316e+06
+--- PASS: TestDBInsertionThroughputNormal (719.60s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	720.110s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 75000 1043.287167848 3.105568725323425e+06
+--- PASS: TestDBInsertionThroughputNormal (1055.32s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	1056.032s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 100000 1239.114659934 3.4863601728593055e+06
+--- PASS: TestDBInsertionThroughputNormal (1264.20s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	1265.050s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 150000 2071.901144887 3.1275623434019648e+06
+--- PASS: TestDBInsertionThroughputNormal (2105.80s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	2107.058s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 200000 2918.252014386 2.9606764451485714e+06
+--- PASS: TestDBInsertionThroughputNormal (2953.79s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	2955.412s
+=== RUN   TestDBInsertionThroughputNormal
+ingestion completed
+    db_test.go:7317: 500000 6728.723141621 3.2101187023718734e+06
+--- PASS: TestDBInsertionThroughputNormal (7387.57s)
+PASS
+ok  	github.com/zzylol/prometheus-sketches/tsdb	7389.911s
