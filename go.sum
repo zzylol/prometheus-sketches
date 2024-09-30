@@ -182,6 +182,8 @@ github.com/frankban/quicktest v1.14.5 h1:dfYrrRyLtiqT9GyKXgdh+k4inNeTvmGbuSgZ3lx
 github.com/frankban/quicktest v1.14.5/go.mod h1:4ptaffx2x8+WTWXmUCuVU6aPUX1/Mz7zb5vbUoiM6w0=
 github.com/froot-netsys/promsketch v0.0.0-20240930052445-4662df79c5e8 h1:lSTOrZZGGSH/INFFYfYMR/nnDClsdiccU7tq7Bn+4B0=
 github.com/froot-netsys/promsketch v0.0.0-20240930052445-4662df79c5e8/go.mod h1:v73zb5pYD49maQkWbSU76TI1iliX3MfG5CHwVjH37WM=
+github.com/froot-netsys/promsketch v0.0.0-20240930201616-25fb9232d9c6 h1:GJJ5imWU/W5UslwgpNKjrDJ0pZ+PoAU+mzpN3hQ/KEI=
+github.com/froot-netsys/promsketch v0.0.0-20240930201616-25fb9232d9c6/go.mod h1:7E6DEdWgDmsmWCLBUjky/QpBhJPSrtOLn+fmfAh9XsA=
 github.com/fsnotify/fsnotify v1.7.0 h1:8JEhPFa5W2WU7YfeZzPNqzMP6Lwt7L2715Ggo0nosvA=
 github.com/fsnotify/fsnotify v1.7.0/go.mod h1:40Bi/Hjc2AVfZrqy+aj+yEI+/bRxZnMJyTJwOpGvigM=
 github.com/fxamacker/cbor/v2 v2.7.0 h1:iM5WgngdRBanHcxugY4JySA0nk1wZorNOpTgCMedv5E=
